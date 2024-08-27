@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="\static\styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <h1>Text Summarizer</h1>
+        </header>
+        <main>
+            <div class="card input-card">
+                <div class="arrow"></div>
+                <form action="/analyze" method="POST">
+                    <label for="input-text" class="inside-card">Paste your text here:</label>
+                    <textarea name="rawtext" id="input-text" placeholder="Paste your text here..."></textarea>
+                    <button id="summarize-btn">Summarize</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
